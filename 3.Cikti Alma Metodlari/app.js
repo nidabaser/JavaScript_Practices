@@ -1,3 +1,5 @@
+/*
+
 // Document write ile çıktı verme
 document.writeln("Hello World <br>");
 document.writeln("Selam Dunya");
@@ -22,3 +24,19 @@ console.clear();
 let x=5;
 let y=10;
 alert("Sum of two numbers: " + (x + y));
+
+*/
+
+// Window Objesi
+console.log(window);
+// İçinde localStorage objesi de var.
+console.log(window.localStorage);
+// Location objesi içinde port bilgisi de var
+console.log("Port numarasini yazdiralim: ", window.location.port);
+// Windows objesinin içindeki document objesi de var
+console.log(window.document.location);
+// Aslında en başta window demeye de gerek yok zaten hepsi onun içinde olduğu için
+console.log(document.location);
+// console metodları
+console.error("Hata yazdirma");
+console.info("Bilgi mesaji");
