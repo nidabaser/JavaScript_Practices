@@ -25,8 +25,6 @@ let x=5;
 let y=10;
 alert("Sum of two numbers: " + (x + y));
 
-*/
-
 // Window Objesi
 console.log(window);
 // İçinde localStorage objesi de var.
@@ -47,3 +45,14 @@ debugger;
 console.log(location.port);
 console.log(location.port);
 console.log(location.port);
+
+*/
+
+/*
+    BETTER COMMENTS
+    ? This is for info
+    ! This is important
+    TODO: This is for to do
+    * Emphasize comment
+
+ */
