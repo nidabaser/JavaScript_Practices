@@ -40,3 +40,10 @@ console.log(document.location);
 // console metodları
 console.error("Hata yazdirma");
 console.info("Bilgi mesaji");
+console.warn("Hata olustu!");
+
+//Debugger
+debugger;
+console.log(location.port);
+console.log(location.port);
+console.log(location.port);
