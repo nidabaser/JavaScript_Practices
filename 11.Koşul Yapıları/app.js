@@ -63,7 +63,9 @@ ID no 11 karakterden oluşacak
 let idNo = prompt("Enter your id number: ");
 let username = prompt("Enter your name: ");
 
-checkIdAndName(idNo, username);
+//checkIdAndName(idNo, username);
+
+checkIdAndName2(idNo, username);
 
 function checkIdAndName (id, name){
     if (name != "") {
@@ -75,4 +77,23 @@ function checkIdAndName (id, name){
     } else {
         console.log("Username can not be null");
     }
+}
+
+
+// Other Usage for Conditions
+
+function checkIdAndName2 (id, name) {
+    
+    if (name == "") {
+        console.log("Please enter your username");
+        return; // Metodu sonlandırır, alttaki kodlar çalışmaz.
+    }
+    
+    if (id.length != 11) {
+        console.log("Please enter valid ID number");
+        return;
+    }
+
+    console.log("Success");
+
 }
