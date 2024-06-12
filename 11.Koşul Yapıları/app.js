@@ -29,9 +29,9 @@ let finalExam = Number(prompt("Enter your final exam point: "));
 let average = ((exam1 * 0.3) + (exam2 * 0.3) + (finalExam * 0.4));
 
 if (average >= 60) {
-    alert("Congrats, You have passed!");
+    alert("Congrats, You have passed :) Your GPA: " + average);
     console.log("Dersten geçtiniz, tebrikler!");
 } else {
-    alert("Oh no, You have not passed :(");
+    alert("Oh no, You have not passed :( Your GPA: " + average);
     console.log("Dersten kaldiniz, geçmiş olsun :(");
 }
