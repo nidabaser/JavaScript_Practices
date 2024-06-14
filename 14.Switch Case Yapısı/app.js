@@ -2,7 +2,7 @@
 
 let num = prompt("Enter number: ");
 
-switch(num){
+switch (num) {
     case "1":
         alert("Monday");
         console.log("Number is 1");
@@ -31,4 +31,11 @@ switch(num){
         alert("Sunday");
         console.log("Number is 7");
         break;
+    default:
+        alert("Please enter valid number");
+        console.log("Invalid number");
 }
+
+/*
+VS Code satırları düzeltme kısayol tuşu : ALT + SHIFT + F
+*/
