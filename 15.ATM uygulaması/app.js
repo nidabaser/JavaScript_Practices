@@ -25,8 +25,9 @@ switch (select) {
     case "2":
         let withdrawAmount = Number(prompt("Enter withdraw amount: "));
 
-        if (withdrawAmount <= balance) {
+        if (withdrawAmount < balance) {
             balance -= withdrawAmount;
+            alert("Remaining balance: " + balance);
         } else {
             alert("Error because " + newLine + "Your balance: " + balance
                 + " is smaller than your withdraw amount!");
