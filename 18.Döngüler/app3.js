@@ -9,11 +9,22 @@ let count = 1;
 // }while(count<=10);
 
 // 1 to 20, odd numbers;
-let sum = 0;
-do{
-    if(count%2==1){
-        sum += count;
-    }
+// let sum = 0;
+// do{
+//     if(count%2==1){
+//         sum += count;
+//     }
+//     count++;
+// } while (count<=20);
+// console.log("Sum of the odd numbers 1 to 20 is " + sum);
+
+//? Break and Continue
+while(count<=10){
     count++;
-} while (count<=20);
-console.log("Sum of the odd numbers 1 to 20 is " + sum);
+    if(count>10){
+        break; // Döngüyü kırdı ve çıktı
+    }
+    if(count==8){
+        continue; // Sadece bu adımı yapma sonrasına devam et
+    }
+}
