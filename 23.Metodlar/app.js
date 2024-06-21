@@ -39,3 +39,16 @@
 //     }
 // }
 
+// ? Geriye değer döndüren metod, return anahtar kelimesiyle:
+
+function exponantial(number, exp) {
+    let result = 1;
+    for (let i = 0; i < exp; i++) {
+        result *= number;
+    }
+    return result;
+}
+
+let returningValue = exponantial(3, 3);
+
+console.log(returningValue);
