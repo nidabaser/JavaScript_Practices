@@ -41,14 +41,43 @@
 
 // ? Geriye değer döndüren metod, return anahtar kelimesiyle:
 
-function exponantial(number, exp) {
-    let result = 1;
-    for (let i = 0; i < exp; i++) {
-        result *= number;
-    }
+// function exponantial(number, exp) {
+//     let result = 1;
+//     for (let i = 0; i < exp; i++) {
+//         result *= number;
+//     }
+//     return result;
+// }
+
+// let returningValue = exponantial(3, 3);
+
+// console.log(returningValue);
+
+/*
+ * NOTE:
+ * 
+ * "return" anahtar kelimesi bir değer metodun dışına çıkarmak içindir.
+ * Aynı zamanda metodu bitirir yani sonrasında yazılan satırlar okunmaz.
+ * 
+ * Comment selected lines with
+ * CTRL + K + C
+ * 
+ * Undo comment selected lines with
+ * CTRL + Ö
+ *
+ */
+
+// ? İç içe metod çağırma örneği
+
+let resultNested = kupAl(2);
+
+function kareAl(num){
+    let result = num * num;
     return result;
 }
 
-let returningValue = exponantial(3, 3);
-
-console.log(returningValue);
+function kupAl(num){
+    let result = num*num*num;
+    let kareResult = kareAl(result);
+    console.log(kareResult);
+}
