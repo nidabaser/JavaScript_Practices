@@ -2,11 +2,17 @@
 
 let text = "I am learning Javascript";
 
-let char = prompt("Please enter character: ");
+//let char = prompt("Please enter character: ");
 
-let result = find(char);
+//let result = find(char);
 
-alert("Harf sayısı: " + result);
+//alert("Harf sayısı: " + result);
+
+console.log(text);
+
+find("a");
+find("e");
+find("j");
 
 function find(char){
 
@@ -21,7 +27,7 @@ function find(char){
         };
 
     }
-
-     return toplam;
+    
+    console.log("Number of " + char + " letters in sentence: " + toplam);//return toplam;
 
 }
