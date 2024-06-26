@@ -20,3 +20,11 @@ indexOf     : Elemanın indeks numarası
 includes    : Dizi, verdiğimiz elemanı içeriyor mu?
 
 */
+
+// Examples
+
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+console.log(fruits.length);
+let newArrayLength = fruits.push("Lemon");
+console.log(newArrayLength);
