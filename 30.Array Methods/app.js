@@ -81,6 +81,13 @@ console.log("Array Length : " + fruits.length);
 // console.log(slicedArray);
 
 // Reverse
-let reversedArray = fruits.reverse();
-console.log(reversedArray);
-console.log(fruits); // The original array is now equal to its reverse
+// let reversedArray = fruits.reverse();
+// console.log(reversedArray);
+// console.log(fruits); // The original array is now equal to its reverse
+
+// Split
+
+let names = "Alice, Bob, John";
+let namesArray = names.split(","); // Separator is comma
+console.log(typeof namesArray);
+console.log(namesArray);
