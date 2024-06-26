@@ -92,6 +92,12 @@ console.log("Array Length : " + fruits.length);
 // console.log(namesArray);
 
 // IndexOf
-let index = fruits.indexOf("Apple");
-console.log("Index of the element: " + index);
+// let index = fruits.indexOf("Apple");
+// console.log("Index of the element: " + index);
 
+// Includes
+let isThere1 = fruits.includes("Apple");
+console.log(isThere1);
+
+let isThere2 = fruits.includes("Tomato");
+console.log(isThere2);
