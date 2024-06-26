@@ -22,9 +22,17 @@ includes    : Dizi, verdiğimiz elemanı içeriyor mu?
 */
 
 // Examples
-
 let fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+console.log("Array Length : " + fruits.length);
 
-console.log(fruits.length);
-let newArrayLength = fruits.push("Lemon");
-console.log(newArrayLength);
+// Push
+let afterPushLength = fruits.push("Lemon");
+console.log(fruits);
+console.log("After push array length : " + afterPushLength);
+
+// Unshift
+let afterUnshiftLength = fruits.unshift("Cherry");
+console.log(fruits);
+console.log("After unshift array length : " + afterUnshiftLength);
+
