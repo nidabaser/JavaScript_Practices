@@ -41,3 +41,7 @@ let removedElement = fruits.pop();
 console.log(fruits);
 console.log(removedElement + " is the last element of array, its removed after pop");
 
+// Shift
+let removedElement2 = fruits.shift();
+console.log(fruits);
+console.log(removedElement2 + " is the first element of array, its removed after shift");
