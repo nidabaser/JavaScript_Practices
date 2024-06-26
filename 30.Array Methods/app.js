@@ -83,3 +83,4 @@ console.log("Array Length : " + fruits.length);
 // Reverse
 let reversedArray = fruits.reverse();
 console.log(reversedArray);
+console.log(fruits); // The original array is now equal to its reverse
