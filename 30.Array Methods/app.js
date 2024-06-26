@@ -86,8 +86,12 @@ console.log("Array Length : " + fruits.length);
 // console.log(fruits); // The original array is now equal to its reverse
 
 // Split
+// let names = "Alice, Bob, John";
+// let namesArray = names.split(","); // Separator is comma
+// console.log(typeof namesArray);
+// console.log(namesArray);
 
-let names = "Alice, Bob, John";
-let namesArray = names.split(","); // Separator is comma
-console.log(typeof namesArray);
-console.log(namesArray);
+// IndexOf
+let index = fruits.indexOf("Apple");
+console.log("Index of the element: " + index);
+
