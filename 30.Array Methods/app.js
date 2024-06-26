@@ -60,8 +60,12 @@ console.log("Array Length : " + fruits.length);
 // console.log(fruits);
 
 // ToString
-console.log(typeof fruits);
-let stringFruits = fruits.toString();
+// console.log(typeof fruits);
+// let stringFruits = fruits.toString();
 
-console.log(typeof stringFruits);
-console.log(stringFruits);
+// console.log(typeof stringFruits);
+// console.log(stringFruits);
+
+// Join
+let joinFruits = fruits.join(" - ");
+console.log(joinFruits);
