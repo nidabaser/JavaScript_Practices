@@ -77,5 +77,9 @@ console.log("Array Length : " + fruits.length);
 // console.log(concatArray);
 
 // Slice
-let slicedArray = fruits.slice(2);
-console.log(slicedArray);
+// let slicedArray = fruits.slice(2);
+// console.log(slicedArray);
+
+// Reverse
+let reversedArray = fruits.reverse();
+console.log(reversedArray);
