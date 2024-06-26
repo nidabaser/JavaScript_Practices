@@ -67,5 +67,12 @@ console.log("Array Length : " + fruits.length);
 // console.log(stringFruits);
 
 // Join
-let joinFruits = fruits.join(" - ");
-console.log(joinFruits);
+// let joinFruits = fruits.join(" - ");
+// console.log(joinFruits);
+
+// Concat
+let fruits1 = ["elma", "armut", "nar", "portakal"];
+let fruits2 = ["çilek", "kiraz"];
+let concatArray = fruits1.concat(fruits2);
+console.log(concatArray);
+
