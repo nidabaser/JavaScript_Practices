@@ -26,22 +26,35 @@ let fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits);
 console.log("Array Length : " + fruits.length);
 
-// Push
-let afterPushLength = fruits.push("Lemon");
-console.log(fruits);
-console.log("After push array length : " + afterPushLength);
+// // Push
+// let afterPushLength = fruits.push("Lemon");
+// console.log(fruits);
+// console.log("After push array length : " + afterPushLength);
 
-// Unshift
-let afterUnshiftLength = fruits.unshift("Cherry");
-console.log(fruits);
-console.log("After unshift array length : " + afterUnshiftLength);
+// // Unshift
+// let afterUnshiftLength = fruits.unshift("Cherry");
+// console.log(fruits);
+// console.log("After unshift array length : " + afterUnshiftLength);
 
-// Pop
-let removedElement = fruits.pop();
-console.log(fruits);
-console.log(removedElement + " is the last element of array, its removed after pop");
+// // Pop
+// let removedElement = fruits.pop();
+// console.log(fruits);
+// console.log(removedElement + " is the last element of array, its removed after pop");
 
-// Shift
-let removedElement2 = fruits.shift();
+// // Shift
+// let removedElement2 = fruits.shift();
+// console.log(fruits);
+// console.log(removedElement2 + " is the first element of array, its removed after shift");
+
+// Splice
+fruits.splice(0,0,"Watermelon"); // 0.index'ten başla, 0 tane eleman sil, karpuz elemanını ekle
 console.log(fruits);
-console.log(removedElement2 + " is the first element of array, its removed after shift");
+
+fruits.splice(2,0,"Tomato"); // add a new element into index 2 without removing any element
+console.log(fruits);
+
+fruits.splice(1,2); // start from index 1 and remove 2 elements
+console.log(fruits);
+
+fruits.splice(2,2,"Grape"); // start from index 2, remove 2 elements and add new element
+console.log(fruits);
