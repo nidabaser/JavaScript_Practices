@@ -47,14 +47,21 @@ console.log("Array Length : " + fruits.length);
 // console.log(removedElement2 + " is the first element of array, its removed after shift");
 
 // Splice
-fruits.splice(0,0,"Watermelon"); // 0.index'ten başla, 0 tane eleman sil, karpuz elemanını ekle
-console.log(fruits);
+// fruits.splice(0,0,"Watermelon"); // 0.index'ten başla, 0 tane eleman sil, karpuz elemanını ekle
+// console.log(fruits);
 
-fruits.splice(2,0,"Tomato"); // add a new element into index 2 without removing any element
-console.log(fruits);
+// fruits.splice(2,0,"Tomato"); // add a new element into index 2 without removing any element
+// console.log(fruits);
 
-fruits.splice(1,2); // start from index 1 and remove 2 elements
-console.log(fruits);
+// fruits.splice(1,2); // start from index 1 and remove 2 elements
+// console.log(fruits);
 
-fruits.splice(2,2,"Grape"); // start from index 2, remove 2 elements and add new element
-console.log(fruits);
+// fruits.splice(2,2,"Grape"); // start from index 2, remove 2 elements and add new element
+// console.log(fruits);
+
+// ToString
+console.log(typeof fruits);
+let stringFruits = fruits.toString();
+
+console.log(typeof stringFruits);
+console.log(stringFruits);
