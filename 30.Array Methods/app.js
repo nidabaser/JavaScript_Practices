@@ -36,3 +36,8 @@ let afterUnshiftLength = fruits.unshift("Cherry");
 console.log(fruits);
 console.log("After unshift array length : " + afterUnshiftLength);
 
+// Pop
+let removedElement = fruits.pop();
+console.log(fruits);
+console.log(removedElement + " is the last element of array, its removed after pop");
+
