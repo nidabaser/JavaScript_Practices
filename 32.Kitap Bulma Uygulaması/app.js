@@ -64,4 +64,21 @@ function createShelf(){
 
 }
 
-createShelf();
+function findCode(bookName){
+
+    let shelfCode = null;
+
+    books.forEach(function(book){
+
+        if(book.name.toUpperCase().includes(bookName.toUpperCase(),0)){
+
+            shelfCode = book.shelf;
+
+        }
+
+    });
+
+    return shelfCode;
+
+}
+
