@@ -40,3 +40,13 @@ console.log(Math.pow(3,2));
 // Pi
 //This is the ratio of the circumference of a circle to its diameter.
 console.log(Math.PI);
+
+//Random
+//Returns a pseudorandom number between 0 and 1.
+console.log(Math.random());
+console.log(Math.random()*10); // Between 1-10
+console.log(Math.random()*100); // Between 1-100
+
+console.log(Math.floor(Math.random())); // Integer 0-1
+console.log(Math.floor(Math.random()*10)); // Integer between 1-10
+console.log(Math.floor(Math.random()*100)); // Integer between 1-100
