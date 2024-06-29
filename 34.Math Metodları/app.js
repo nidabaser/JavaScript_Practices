@@ -25,3 +25,18 @@ console.log(Math.max(1,2,3,55));
 //Returns the smaller of a set of supplied numeric expressions.
 console.log(Math.min(10,0,-5));
 
+//Abs
+//Returns the absolute value of a number (the value without regard to whether it is positive or negative).
+console.log(Math.abs(-12));
+
+//Sqrt
+//Returns the square root of a number.
+console.log(Math.sqrt(64));
+
+//Pow
+//Returns the value of a base expression taken to a specified power.
+console.log(Math.pow(3,2));
+
+// Pi
+//This is the ratio of the circumference of a circle to its diameter.
+console.log(Math.PI);
