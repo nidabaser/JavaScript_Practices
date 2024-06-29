@@ -99,3 +99,21 @@ function showBookOnTheShelf(bookCode){
     }
 }
 
+//Method Calls
+createShelf();
+
+let bookName = prompt("Please enter book name: ");
+
+let shelfCode = findCode(bookName);
+
+if(shelfCode != null){
+
+    showBookOnTheShelf(shelfCode);
+
+    createShelf();
+
+}else{
+
+    alert("The book does not exist in the library");
+    
+}
