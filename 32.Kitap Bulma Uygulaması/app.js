@@ -54,7 +54,7 @@ function createShelf(){
 
         for(let j=0; j<shelves[i].length; j++){
     
-            row += "|" + shelves[i][j].code + "|";
+            row += "|" + ( shelves[i][j].show ? shelves[i][j].code : "---" ) + "|";
     
         }
 
