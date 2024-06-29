@@ -82,3 +82,20 @@ function findCode(bookName){
 
 }
 
+function showBookOnTheShelf(bookCode){
+
+    for(let i = 0; i<shelves.length; i++){
+
+        for(let j = 0; j<shelves[i].length; j++){
+
+            if(shelves[i][j].code == bookCode){
+
+                shelves[i][j].show = true;
+
+                break;
+
+            }
+        }
+    }
+}
+
