@@ -20,3 +20,12 @@ classListesi.forEach(function(className){
 })
 
 console.log(classListesi);
+
+let buttonText = button.textContent;
+let buttonText2 = button.innerHTML;
+
+console.log(buttonText);
+console.log(buttonText2);
+
+button.textContent = "<b>To do Ekle</b>"; // only text
+button.innerHTML = "<b>To do Ekle</b>"; // makes bold
