@@ -42,11 +42,38 @@ const todoListArr = Array.from(document.getElementsByClassName("list-group-item"
 })
 */
 
-const forms = document.getElementsByTagName("form");
-console.log(forms);
-console.log(forms[1]);
-console.log(forms[1].id);
-console.log(forms[1].name);
+// const forms = document.getElementsByTagName("form");
+// console.log(forms);
+// console.log(forms[1]);
+// console.log(forms[1].id);
+// console.log(forms[1].name);
 
-const todoList = document.getElementsByTagName("li");
+// const todoList = document.getElementsByTagName("li");
+// console.log(todoList);
+
+//* getElementById - getElementByClassName - getElementByTagName
+//* Üçünün işlevini birden yapan metot : querySelector - querySelectorAll
+
+const clearButton = document.querySelector("#todoClearButton"); // id selection with #
+console.log(clearButton);
+
+const todoList = document.querySelector(".list-group"); // class selection with .
 console.log(todoList);
+
+const todoLists = document.querySelectorAll(".list-group-item");
+console.log(todoLists);
+
+const todoListIndex = document.querySelectorAll(".list-group-item")[2];
+console.log(todoListIndex);
+
+const todoLiChilds = document.querySelectorAll("li:first-child"); // or last-child
+console.log(todoLiChilds);
+
+const todoListChilds = document.querySelectorAll("li:nth-child(odd)"); // or even or numbers 1,2,3...
+console.log(todoListChilds);
+
+const todoListEvens = Array.from(document.querySelectorAll("li:nth-child(even)"));
+todoListEvens.forEach(function(todo){
+    todo.style.backgroundColor = "lightgrey"; // Change background color
+})
+console.log(todoListEvens);
