@@ -54,26 +54,50 @@ const todoListArr = Array.from(document.getElementsByClassName("list-group-item"
 //* getElementById - getElementByClassName - getElementByTagName
 //* Üçünün işlevini birden yapan metot : querySelector - querySelectorAll
 
-const clearButton = document.querySelector("#todoClearButton"); // id selection with #
+// const clearButton = document.querySelector("#todoClearButton"); // id selection with #
+// console.log(clearButton);
+
+// const todoList = document.querySelector(".list-group"); // class selection with .
+// console.log(todoList);
+
+// const todoLists = document.querySelectorAll(".list-group-item");
+// console.log(todoLists);
+
+// const todoListIndex = document.querySelectorAll(".list-group-item")[2];
+// console.log(todoListIndex);
+
+// const todoLiChilds = document.querySelectorAll("li:first-child"); // or last-child
+// console.log(todoLiChilds);
+
+// const todoListChilds = document.querySelectorAll("li:nth-child(odd)"); // or even or numbers 1,2,3...
+// console.log(todoListChilds);
+
+// const todoListEvens = Array.from(document.querySelectorAll("li:nth-child(even)"));
+//* todoListEvens.forEach(function(todo){
+//*     todo.style.backgroundColor = "lightgrey"; // Change background color
+// })
+// console.log(todoListEvens);
+
+//? Style Özelliği Kullanımı
+
+const todo = document.querySelectorAll(".list-group-item")[0];
+const todoList = document.querySelector(".list-group");
+const clearButton = document.querySelector("#todoClearButton");
+
+console.log(todo);
+console.log(todoList);
 console.log(clearButton);
 
-const todoList = document.querySelector(".list-group"); // class selection with .
-console.log(todoList);
+todo.style.color = "blue";
+todo.style.backgroundColor = "lightBlue";
+todo.style.fontWeight = "bold";
+todo.style.paddingTop = "20px";
+todo.style.paddingLeft = "50px";
 
-const todoLists = document.querySelectorAll(".list-group-item");
-console.log(todoLists);
+todoList.style.marginTop = "60px";
+todoList.style.marginLeft = "100px";
 
-const todoListIndex = document.querySelectorAll(".list-group-item")[2];
-console.log(todoListIndex);
-
-const todoLiChilds = document.querySelectorAll("li:first-child"); // or last-child
-console.log(todoLiChilds);
-
-const todoListChilds = document.querySelectorAll("li:nth-child(odd)"); // or even or numbers 1,2,3...
-console.log(todoListChilds);
-
-const todoListEvens = Array.from(document.querySelectorAll("li:nth-child(even)"));
-todoListEvens.forEach(function(todo){
-    todo.style.backgroundColor = "lightgrey"; // Change background color
-})
-console.log(todoListEvens);
+clearButton.style.backgroundColor = "lightGreen";
+clearButton.style.fontWeight = "bold";
+clearButton.style.padding = "30px";
+clearButton.style.borderRadius = "50px";
