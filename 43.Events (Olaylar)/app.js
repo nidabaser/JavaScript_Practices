@@ -36,8 +36,12 @@ const clearButton = document.querySelector("#todoClearButton");
 
 clearButton.addEventListener("click", changeTitle);
 
-function changeTitle(){
+function changeTitle(e){ // e, is event object
 
         onClick = document.querySelectorAll('.card-title')[1].textContent='Title changed';
-    
+
+        console.log(e.type); // Event Type
+        console.log(e.target); // triggered HTML element
+        console.log(e.target.textContent);
+        console.log(e.target.className);
     }
