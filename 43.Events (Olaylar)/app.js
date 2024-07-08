@@ -25,7 +25,19 @@
 // }
 
 //* addEventListener()
+// const clearButton = document.querySelector("#todoClearButton");
+// clearButton.addEventListener("click", function(){
+//     document.querySelectorAll('.card-title')[1].textContent='Title changed';
+// });
+
+//* Best practice of addEventListener is using it with a function
+
 const clearButton = document.querySelector("#todoClearButton");
-clearButton.addEventListener("click", function(){
-    document.querySelectorAll('.card-title')[1].textContent='Title changed';
-});
+
+clearButton.addEventListener("click", changeTitle);
+
+function changeTitle(){
+
+        onClick = document.querySelectorAll('.card-title')[1].textContent='Title changed';
+    
+    }
