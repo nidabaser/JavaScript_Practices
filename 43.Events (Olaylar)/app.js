@@ -19,8 +19,13 @@
 
 
 //* using function
-function changeTitle(){
-    onClick = document.querySelectorAll('.card-title')[1].textContent='Title changed';
-    console.log("Başlık değişti");
-}
+// function changeTitle(){
+//     onClick = document.querySelectorAll('.card-title')[1].textContent='Title changed';
+//     console.log("Başlık değişti");
+// }
 
+//* addEventListener()
+const clearButton = document.querySelector("#todoClearButton");
+clearButton.addEventListener("click", function(){
+    document.querySelectorAll('.card-title')[1].textContent='Title changed';
+});
