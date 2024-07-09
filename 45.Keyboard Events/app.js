@@ -35,12 +35,24 @@ function run3(e){
 */
 
 // How to prevent a user from refreshing the page by pressing F5
-document.addEventListener("keydown",runF5);
-function runF5(e){
-    console.log("Key: " + e.key);
-    console.log("Key ASCII: " + e.keyCode);
-    if(e.keyCode == 116){
-        alert("Refreshing page is prevented");
-    }
-    e.preventDefault();
+// document.addEventListener("keydown",runF5);
+// function runF5(e){
+//     console.log("Key: " + e.key);
+//     console.log("Key ASCII: " + e.keyCode);
+//     if(e.keyCode == 116){
+//         alert("Refreshing page is prevented");
+//     }
+//     e.preventDefault();
+// }
+
+// How to take user input from selected element
+const cardTitle = document.querySelectorAll(".card-title")[0];
+const input = document.querySelector("#todoName");
+
+console.log(input);
+input.addEventListener("keyup",run);
+
+function run(e){
+    console.log(e.target.value);
+    cardTitle.textContent = e.target.value;
 }
