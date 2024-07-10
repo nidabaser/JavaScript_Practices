@@ -11,3 +11,11 @@ sessionStorage.setItem("101", "Anes");
 
 // Removing Value (by key)
 sessionStorage.removeItem("101");
+
+// Get Item
+let value = sessionStorage.getItem("123");
+if(value == null){ // return null
+    console.log("Not Found");
+}else {
+    console.log("Value is " + value);
+}
