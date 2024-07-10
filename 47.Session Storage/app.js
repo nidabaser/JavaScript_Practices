@@ -30,6 +30,12 @@ console.log(typeof type);
 
 // Session storage - Array Printing
 let names = ["Ali", "Ayşe", "Fatma", "Adem"];
-sessionStorage.setItem("names", names);
-let arr = sessionStorage.getItem("names");
-console.log(typeof value); // Array but type is string
+
+// sessionStorage.setItem("names", names);
+sessionStorage.setItem("names", JSON.stringify(names));
+
+// let arr = sessionStorage.getItem("names");
+let arr = JSON.parse(sessionStorage.getItem("names"));
+
+//console.log(typeof value); // Array but type is string
+console.log(arr);
