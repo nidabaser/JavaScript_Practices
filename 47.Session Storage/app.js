@@ -39,3 +39,10 @@ let arr = JSON.parse(sessionStorage.getItem("names"));
 
 //console.log(typeof value); // Array but type is string
 console.log(arr);
+
+// Using forEach with this array
+// Eğer yukarıda JSON.parse yapmamış olsaydık,
+// forEach yapamaz, hata alırdık
+arr.forEach(function(name) {
+    console.log(name);
+});
