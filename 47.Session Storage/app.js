@@ -19,3 +19,6 @@ if(value == null){ // return null
 }else {
     console.log("Value is " + value);
 }
+
+// Remove All
+sessionStorage.clear();
