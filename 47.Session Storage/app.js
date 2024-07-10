@@ -8,6 +8,7 @@ sessionStorage.setItem("123", "Nida");
 sessionStorage.setItem("456", "Sena");
 sessionStorage.setItem("789", "Adin");
 sessionStorage.setItem("101", "Anes");
+sessionStorage.setItem(521, "User"); // type is always string in session storage
 
 // Removing Value (by key)
 sessionStorage.removeItem("101");
@@ -21,4 +22,14 @@ if(value == null){ // return null
 }
 
 // Remove All
-sessionStorage.clear();
+//sessionStorage.clear();
+
+// Session storage type
+let type = sessionStorage.getItem(521);
+console.log(typeof type);
+
+// Session storage - Array Printing
+let names = ["Ali", "Ayşe", "Fatma", "Adem"];
+sessionStorage.setItem("names", names);
+let arr = sessionStorage.getItem("names");
+console.log(typeof value); // Array but type is string
