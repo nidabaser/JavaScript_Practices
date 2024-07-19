@@ -15,6 +15,12 @@ function runEvents(){
 }
 
 function addTodo(e){
-    console.log("Submit event'i çalıştı");
+    const inputText = addInput.value.trim();
+    if(inputText == null || inputText==""){
+        alert("Boş olamaz!");
+    }
+
+    //todo : Arayüze todo ekleme
+    //todo : Storage todo ekleme
     e.preventDefault();
 }
