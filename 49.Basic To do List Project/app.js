@@ -18,9 +18,29 @@ function addTodo(e){
     const inputText = addInput.value.trim();
     if(inputText == null || inputText==""){
         alert("Boş olamaz!");
+    } else {
+        addTodoUI(inputText);
     }
-
-    //todo : Arayüze todo ekleme
     //todo : Storage todo ekleme
     e.preventDefault();
+}
+
+// Arayüze todo ekleme metodu
+function addTodoUI(newTodo){
+    const li = document.createElement("li");
+    li.className = "list-group-item d-flex justify-content-between";
+    li.textContent = newTodo;
+
+    const a = document.createElement("a");
+    a.href = "#";
+    a.className = "delete-item";
+
+    const i = document.createElement("i");
+    i.className = "fa fa-remove";
+
+    a.appendChild(i);
+    li.appendChild(a);
+    todoList.appendChild(li);
+
+    addInput.value = "";
 }
