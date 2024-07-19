@@ -20,8 +20,8 @@ function addTodo(e){
         alert("Boş olamaz!");
     } else {
         addTodoUI(inputText);
+        addTodoToStorage(inputText);
     }
-    //todo : Storage todo ekleme
     e.preventDefault();
 }
 
@@ -43,4 +43,19 @@ function addTodoUI(newTodo){
     todoList.appendChild(li);
 
     addInput.value = "";
+}
+
+// Storage'a todo ekleme metodu
+function addTodoToStorage(newTodo) {
+    checkTodosFromStorage(); // Different method call for null check
+    todos.push(newTodo);
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function checkTodosFromStorage() {
+    if (localStorage.getItem("todos") === null) {
+        todos = [];
+    } else {
+        todos = JSON.parse(localStorage.getItem("todos"));
+    }
 }
