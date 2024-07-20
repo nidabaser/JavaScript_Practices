@@ -34,7 +34,6 @@ function filter(e){
     if(todoListesi.length>0){
         todoListesi.forEach(function(todo){
             if(todo.textContent.toLowerCase().trim().includes(filterValue)){
-                //
                 todo.setAttribute("style","display : block");
             }else{
                 todo.setAttribute("style","display : none !important");
@@ -137,7 +136,7 @@ function checkTodosFromStorage() {
 function showAlert(type, message) {
     const div = document.createElement("div");
     //   div.className="alert alert-"+type;
-    div.className = `alert alert-${type}`; //litirel template
+    div.className = `alert alert-${type}`; //literal template
     div.textContent = message;
 
     firstCardBody.appendChild(div);
