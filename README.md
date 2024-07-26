@@ -5,6 +5,7 @@ Sources:
 - https://www.w3schools.com/js/
 - https://www.javascript.com/
 - https://aws.amazon.com/tr/what-is/javascript/
+
 About ECMAScript:
 - https://www.w3schools.com/js/js_versions.asp
 - https://www.w3schools.com/js/js_es6.asp  
