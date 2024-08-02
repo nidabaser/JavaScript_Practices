@@ -11,7 +11,7 @@ function add(n1,n2,n3,n4,n5,n6,n7,n8,n9){
 // Yeni yöntem
 add(...numbers) //* Kısa yol
 
-// Another Example
+// Example
 const backend = ["Java", "C#", "PHP"]
 const frontend = ["HTML", "Javascript", "CSS"]
 
@@ -25,7 +25,12 @@ console.log("Backend: ", backend);
 console.log("Frontend: ", frontend);
 console.log("Fullstack: ", fullstack);
 
-// Another Example
+// Example
 const oddNumbers = [1,3,5,7,9]
 let [a,b, ...remainingNumbers] = oddNumbers
 console.log(a, b, remainingNumbers);
+
+// Example
+const arr = ["Noctis", "Ignis", "Gladius", "Prompto"]
+const arr2 = [...arr] //* Kısa yol
+console.log("arr dizisini arr2 dizisine spread operatörüyle atamak:\n", arr2);
