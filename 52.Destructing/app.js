@@ -15,3 +15,19 @@ let lang1, lang2, lang3, lang4
 // Bu şekilde destructing ile ayırmak daha kolaydır
 
 console.log(lang1, lang2, lang3, lang4);
+
+// Array yerine Object ile Destruction kullanımı
+
+const person = {
+    firstName : "Alice",
+    lastName : "Dove",
+    salary : 50000,
+    age : 33
+}
+
+let {firstName, lastName, salary, age} = person
+
+//Veya yukarıdakinden farklı değişken isimleriyle de kullanılabilir ama console çıktısında da değişmesi gerekir.
+//*let {firstName:isim, lastName:soyisim, salary:maas, age:yas} = person
+
+console.log("Name:\t", firstName, "\nSurname\t", lastName, "\nSalary:\t", salary, "\nAge:\t", age);
