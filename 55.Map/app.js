@@ -55,3 +55,17 @@ for(let key of map1.keys()){
 for(let value of map1.values()){
     console.log(value);
 }
+
+//Convert Map to Array
+const array = Array.from(map1);
+console.log(array);
+
+//Only keys
+array.forEach((value)=>{
+    console.log(value[0]);
+})
+
+//Only values
+array.forEach((value)=>{
+    console.log(value[1]);
+})
