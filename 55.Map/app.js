@@ -69,3 +69,15 @@ array.forEach((value)=>{
 array.forEach((value)=>{
     console.log(value[1]);
 })
+
+//Convert Array to Map
+const array2 = [
+    [1, "Din Djarin"],
+    [2, "Grogu"],
+    [3, "Boba Fett"],
+    [4, "Luke Skywalker"],
+    [5, "Ashoka Tano"]
+]
+
+const myMap = new Map(array2);
+console.log(array2);
